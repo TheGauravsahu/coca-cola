@@ -1,10 +1,16 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { useEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Hero() {
+  useEffect(() => {
+    const img = new Image();
+    img.src = "/coke.png";
+  }, []);
+
   useGSAP(function () {
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -35,7 +41,7 @@ export default function Hero() {
 
     tl2.to(".coke", {
       rotate: "0deg",
-      y: "250%",
+      y: "252%",
       left: "50%",
       scale: 0.46,
     });
