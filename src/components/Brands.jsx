@@ -31,7 +31,7 @@ export default function Brands() {
 
             <div className="w-full flex items-end py-8 justify-center">
               <button className="flex items-center gap-4 justify-center font-semibold ronded-full uppercase text-sm py-1 px-6 rounded-full hover:bg-[#E81622] hover:text-white transition-all cursor-pointer border-2  border-[#E81622] text-[#E81622]">
-                Add to card{" "}
+                Add to cart{" "}
                 <span className="w-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
